@@ -5,7 +5,7 @@ from .portfolio import runPortfolio
 from .exceptions import RequirementNotMeetException
 
 
-class BacktestInterface(object):
+class Portfolio(object):
 
     def __init__(self, asset, frequency='daily', commissions=None, start_date=None, end_date=None, **kwargs):
         self.params = dict.fromkeys(['data_table', 'strategy'], {})
@@ -51,16 +51,6 @@ class BacktestInterface(object):
                 'params': params
             }
         )
-
-
-    # {}_params
-    def ma_crossover_ma_params(self, params):
-            params['ma1'] = params['ma_1']
-            params['ma2'] = params['ma_2']
-            del params['ma_1']
-            del params['ma_2']
-            return params
-
 
     def deleteAction(self, index):
         '''
