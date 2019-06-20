@@ -1,0 +1,66 @@
+{
+    "profit_dropdown": {
+        "def": "淨利 / 最大回檔數值",
+        "name": "獲利風險比",
+        "unit": "ratio"
+    },
+    "trade_returns": {
+        "def": "賣出價格 - 買進價格",
+        "name": "每次交易(買+賣)報酬",
+        "unit": "dollar"
+    },
+    "annualized_returns": {
+        "def": "總報酬率(%) = (1+年化報酬率)^(年數)",
+        "name": "年化報酬率",
+        "unit": "percentage"
+    },
+    "payoff_ratio": {
+        "def": "平均獲利/平均虧損",
+        "name": "盈虧比",
+        "unit": "ratio"
+    },
+    "max_dropdown": {
+        "def": "(最小權益-最大權益)/最大權益",
+        "name": "最大回檔幅度",
+        "unit": "percentage"
+    },
+    "profit_factor": {
+        "def": "總獲利金額 / 總虧損金額", 
+        "name": "獲利因子",
+        "unit": "ratio"
+    },
+    "return_of_investment": {
+        "def": "(期末權益-期初權益)/期初權益",
+        "name": "總報酬率",
+        "unit": "percentage"
+    },
+    "yearly_volatility": {
+        "def": "年報酬率的標準差",
+        "name": "年化波動率",
+        "unit": "percentage"
+    },
+    "trading_times": {
+        "def": "買進+賣出 算兩次",
+        "name": "交易次數",
+        "unit": "int"
+    },
+    "kelly": {
+        "def": "win_rate - (1-win_rate)/payoff_ratio",
+        "name": "凱利公式",
+        "unit": "float"
+    },
+    "sharp_ratio": {
+        "name": "夏普公式(每日->每月->每年)",
+        "unit": "float"
+    },
+    "win_rate": {
+        "name": "勝率",
+        "unit": "percentage",
+        "def": "獲利次數/總交易次數"
+    },
+    "value_at_risk": {
+        "name": "風險價值模型",
+        "def": "在0.05 的信賴水準下，策略在未來特定時期內的最大可能損失比例",
+        "unit": "percentage"
+    }
+}
