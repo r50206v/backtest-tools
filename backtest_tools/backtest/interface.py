@@ -1,6 +1,6 @@
 import json
 import pickle
-from tools.ChartStat import ChartStat
+# from tools.ChartStat import ChartStat
 from .portfolio import runPortfolio
 from .exceptions import RequirementNotMeetException
 
@@ -104,7 +104,8 @@ class BacktestInterface(object):
     def train(self):
         assetList, indList = [], []
         for stat_param in self.indicator:
-            tmp = ChartStat.formatter(stat_param, [], outputPandas=True)
+            # TODO: implement data source 
+            # tmp = ChartStat.formatter(stat_param, [], outputPandas=True)
             tmp_params = {
                 'name': tmp['id'], 'freq': tmp['info']['frequency'], 
                 'id': tmp['id'],
