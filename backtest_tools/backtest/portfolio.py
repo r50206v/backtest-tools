@@ -48,6 +48,8 @@ def runPortfolio(params):
         'progress_bar': False
     })
     result = RunBacktest(trade)
+    if params.get('riskfree_rate'):
+        result.set_riskfree_rate(params['riskfree_rate'])
 
     return {
         'result': result,
